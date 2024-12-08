@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      main {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0% 100%),
+          url("../img/background.jpg");
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img src="../img/logo.png" class="logo" alt="" />
+      <div id="login-form" class="position-absolute">
+        <h2 class="text-white fw-bolder mb-4">Sign Up</h2>
+        <form id="form2">
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="userName"
+              name="name"
+              placeholder=""
+            />
+            <label for="userName">Name</label>
+
+            <small id="nameMessage" class="text-danger d-none"
+              ><i class="fa-regular fa-circle-xmark me-2"></i>Please enter a valid name (at least 3 char).
+            </small>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="userEmail"
+              name="userEmail"
+              placeholder=""
+            />
+            <label for="userEmail">Email</label>
+
+            <small id="emailMessage" class="text-danger d-none"
+              ><i class="fa-regular fa-circle-xmark me-2"></i>Please enter a
+              valid email.
+            </small>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="password"
+              class="form-control"
+              id="userPassword"
+              name="userPassword"
+              placeholder=""
+            />
+            <label for="userPassword">Password</label>
+
+            <small id="passwordMessage" class="text-danger d-none"
+              ><i class="fa-regular fa-circle-xmark me-2"></i>Your password must
+              be between 4 and 60 characters(have 1 number and 1 sepcial char at
+              least).</small
+            >
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="password"
+              class="form-control"
+              id="userPassword2"
+              name="userPassword2"
+              placeholder=""
+            />
+            <label for="userPassword2">Confirm password</label>
+
+            <small id="password2Message" class="text-danger d-none"
+              ><i class="fa-regular fa-circle-xmark me-2"></i>Password don't
+              match.</small
+            >
+          </div>
+          <button type="submit" class="btn btn-danger py-2 w-100 fw-semibold">
+            Sign Up
+          </button>
+          <p class="text-secondary my-3">
+            You have an account?
+            <a
+              href="./index.html"
+              class="my-anchor text-white text-center fw-semibold"
+              >Sign in</a
+            >
+            .
+          </p>
+        </form>
+      </div>
+    </main>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

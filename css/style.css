@@ -1,0 +1,86 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+main{
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding: 12px 10%;
+  position: relative;
+  color: white;
+}
+.logo{
+  width: 170px;
+}
+#login-form{
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 32%;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding:40px 60px;
+  
+}
+#login-form input{
+  background: transparent;
+  color: white;
+}
+#login-form input:focus {
+  box-shadow: 0 0 2px white !important;
+  border-color: white;
+  outline: none;
+  color: white
+}
+small{
+  font-size: 13px;
+  margin-block: 5px;
+}
+.text-danger{
+  color: #e50914;
+}
+.btn-danger{
+  background-color: #e50914;
+}
+.btn-danger:hover{
+  background-color: #c80913;
+}
+.btn-light{
+  background-color: rgba(255, 255, 255, 0.27);
+  border-color: transparent;
+}
+.btn-light:hover{
+  background-color: rgba(255, 255, 255, 0.24);
+  border-color: transparent;
+}
+.my-anchor{
+  text-decoration: none;
+}
+.my-anchor:hover{
+  opacity: 0.75;
+  text-decoration: underline;
+}
+.users img{border: 1px solid black;}
+.users:hover img[alt^="user"]{border: 1px solid white;}
+.users:hover .text-secondary{
+  color: white !important;
+}
+/* =============== Media Query ================ */
+@media screen and (max-width:992px){
+  .logo{
+    width: 150px;
+    display: block;
+    margin: auto;
+  }
+  #login-form{
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+  }
+}
+

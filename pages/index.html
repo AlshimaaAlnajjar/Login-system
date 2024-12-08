@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix</title>
+  <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    main {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0% 100%),
+        url("../img/background.jpg");
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <img src="../img/logo.png" class="logo" alt="" />
+    <div id="login-form" class="position-absolute">
+      <h2 class="text-white fw-bolder mb-4">Sign In</h2>
+      <form id="form1">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="email" placeholder="" />
+          <label for="email">Email</label>
+
+          <small id="emailMes" class="text-danger d-none"><i class="fa-regular fa-circle-xmark me-2"></i>Please enter a
+            valid existing email.
+          </small>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="password" placeholder="" />
+          <label for="password">Password</label>
+
+          <small id="passwordMes" class="text-danger d-none"><i class="fa-regular fa-circle-xmark me-2"></i>Please enter
+            the correct password.</small>
+        </div>
+
+        <button type="submit" id="submit-btn" class="btn btn-danger py-2 w-100 fw-semibold">
+          Sign In
+        </button>
+        <!-- <p class="text-center my-2 opacity-50">OR</p>
+          <button type="button" class="btn btn-light py-2 w-100 fw-semibold text-white">Use a Sign-In Code</button> -->
+        <a href="#" class="my-anchor d-block py-2 text-white text-center">Forget Password?</a>
+        <p class="text-secondary my-3">
+          New to Netflix?
+          <a href="./signUp.html" class="my-anchor text-white text-center fw-semibold">Sign up now.</a>
+        </p>
+      </form>
+      <small class="text-secondary d-block">This page is protected by Google reCAPTCHA to ensure you're not a
+        bot. <a href="#">Learn more.</a>
+      </small>
+    </div>
+  </main>
+  <script src="../js/bootstrap.bundle.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      .container-md {
+        width: 60% !important;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="bg-black">
+      <img src="../img/logo.png" class="logo" alt="" />
+      <div
+        class="d-flex flex-column align-items-center justify-content-center my-5"
+      >
+        <h3 class="fw-semibold">
+          Hello , <span style="color: #e50914" id="userNameDisplay">Alshimaa</span>
+        </h3>
+        <h1 class="fw-light mb-4">Who's Watching?</h1>
+        <div class="container-md container-fluid">
+          <div class="row my-4 text-center">
+            <div class="users col-6 col-md-3">
+              <img src="../img/profile1.png" alt="user1-icon" class="w-100" />
+              <p class="text-secondary my-2">Steven</p>
+            </div>
+            <div class="users col-6 col-md-3">
+              <img src="../img/profile2.jpg" alt="user2-icon" class="w-100" />
+              <p class="text-secondary my-2">will</p>
+            </div>
+            <div class="users col-6 col-md-3">
+              <img src="../img/profile3.jpg" alt="user3-icon" class="w-100" />
+              <p class="text-secondary my-2">Sharon</p>
+            </div>
+            <div class="users col-6 col-md-3">
+              <img src="../img/plus.png" alt="add-user" class="w-100" />
+              <p class="text-secondary my-2">Add Profile</p>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-danger fw-semibold my-5">
+          <a href="../pages/index.html" class="my-anchor text-white">Log Out</a>
+        </button>
+      </div>
+    </main>
+    <script src="../js/bootstrap.bundle.js" defer></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
